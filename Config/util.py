@@ -9,6 +9,7 @@ import plotly.figure_factory as ff
 import nltk
 nltk.download('stopwords')
 nltk.download('vader_lexicon')
+nltk.download('punkt')
 
 from Interface import Machine_learning as ml, widget
 from Config import Global as glb, Charts
