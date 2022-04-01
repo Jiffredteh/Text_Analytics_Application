@@ -5,7 +5,7 @@ from Config import Global as glb
 def layout():
     st.set_option('deprecation.showPyplotGlobalUse', False)
     st.set_page_config(page_title="Text Analytics", page_icon="💬", layout="wide")
-    with open('https://github.com/Jiffredteh/Text_Analytics_Application/blob/main/CSS/styling.css') as f:
+    with open('CSS/styling.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     hide_streamlit_style = """
                 <style>
