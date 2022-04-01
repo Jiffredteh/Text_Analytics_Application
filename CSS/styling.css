@@ -1,1 +1,57 @@
+div.css-12w0qpk.e1tzin5v2{
+    box-shadow:0 10px 20px 0px rgba(0,0,0,.1);
+    border: 1px;
+    transition: .3s all ease-in-out;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+}
 
+div.css-1rh8hwn.e16fv1kl1 {
+    color:black;
+}
+
+div.element-container.css-19xx56d.e1tzin5v1{
+    box-shadow:0 10px 20px 0px rgba(0,0,0,.1);
+    border: 1px;
+    transition: .3s all ease-in-out;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+}
+
+div.css-12w0qpk.e1tzin5v2:hover{
+    box-shadow:0 10px 20px 0px #833ab4;
+    transition: .3s all ease-in-out;
+}
+
+div.css-keje6w.e1tzin5v2{
+    border: 1px;
+    transition: .3s all ease-in-out;
+    padding: 20px 20px 20px 30px;
+    box-shadow:0 10px 20px 0px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+
+div.css-keje6w.e1tzin5v2:hover{
+    box-shadow:0 10px 20px 0px #dc2430;
+    transition: .3s all ease-in-out;
+    transform:rotate(0) scale(1.03);
+    animation-delay:.4s;
+}
+
+div.css-1r6slb0.e1tzin5v2{
+    box-shadow:0 10px 20px 0px rgba(0,0,0,.1);
+    border: 1px;
+    transition: .3s all ease-in-out;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+}
+
+
+div.css-1r6slb0.e1tzin5v2:hover{
+    /* margin-top: -20px; */
+    box-shadow:0 10px 20px 0px #061161;
+    /* transition: .3s all ease-in-out; */
+    transform:rotate(0) scale(1.03);
+    animation-delay:.4s;
+    transition:all .3s cubic-bezier(.28,.05,.65,.97);
+}
