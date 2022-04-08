@@ -12,9 +12,9 @@ def nav():
         about()
     if 'Raw Text input analysis' in option:
         ti.text_input()
-    check = st.checkbox("Use Example Dataset")
+    check = st.sidebar.checkbox("Use Example Dataset")
     if check:
-        df = da.load_dataset("Text_Analytics_Application/Dataset/twitter_racism_parsed_dataset.csv")
+        df = da.load_dataset("Dataset/twitter_racism_parsed_dataset.csv")
         text_sel(df)
         
         
