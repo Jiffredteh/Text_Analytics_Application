@@ -62,8 +62,6 @@ def uploader():
         df = da.load_dataset(uploaded_file)
         st.sidebar.write('---')
         text_sel(df)
-    else:
-        st.sidebar.info("Awaiting to upload a dataset")
 
 def text_sel(df):
     # with st.expander("Select a text"):
