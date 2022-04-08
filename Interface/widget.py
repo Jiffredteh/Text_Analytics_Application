@@ -4,7 +4,6 @@ import plotly.express as px
 from Config import Data_Access as da, util
 from Interface import Text_Extraction as te, NLP, Text_input as ti
 
-
 def nav():
     option = st.sidebar.selectbox("Navigation", ['About Application', 'Dataset input analysis', 'Raw Text input analysis'])
     if 'Dataset input analysis' in option:
@@ -14,6 +13,13 @@ def nav():
     if 'Raw Text input analysis' in option:
         ti.text_input()
 
+def sample_dataset():
+    check = st.checkbox("Use Example Dataset")
+    if check:
+        df = da.load_dataset("Text_Analytics_Application/Dataset/twitter_racism_parsed_dataset.csv")
+        text_sel(df)
+        
+        
 def about():
     col1, col2, col3 = st.columns((1,3,1))
     with col2:
