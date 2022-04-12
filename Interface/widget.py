@@ -8,10 +8,6 @@ def nav():
     option = st.sidebar.selectbox("Navigation", ['About Application', 'Dataset input analysis', 'Raw Text input analysis'])
     if 'Dataset input analysis' in option:
         uploader()
-        check = st.sidebar.checkbox("Use Example Dataset")
-        if check:
-            df = da.load_dataset("Dataset/twitter_racism_parsed_dataset.csv")
-            text_sel(df)
     if 'About Application' in option:
         about()
     if 'Raw Text input analysis' in option:
