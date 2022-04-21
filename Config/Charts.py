@@ -567,13 +567,16 @@ def ML_pie(log_pred, mnvm_pred):
                 {
                     "name": "Prediction",
                     "type": "pie",
-                    "radius": ['40%', '70%'],
-                    "avoidLabelOverlap": "false",
-                    "itemStyle": {
-                        "borderRadius": 10,
-                        "borderColor": '#fff',
-                        "borderWidth": 2
-                    },
+                    "radius": "55%",
+                    "roseType": "area",
+                    "itemStyle": {"borderRadius": 8},
+#                     "radius": ['40%', '70%'],
+#                     "avoidLabelOverlap": "false",
+#                     "itemStyle": {
+#                         "borderRadius": 10,
+#                         "borderColor": '#fff',
+#                         "borderWidth": 2
+#                     },
                     "emphasis": {
                         "itemStyle": {
                             "shadowBlur": 10,
