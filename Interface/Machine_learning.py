@@ -10,3 +10,7 @@ def logistic_regression_model(X_train, y_train, X_test, y_test):
 def naive_bayes_model(X_train, y_train, X_test, y_test):
     NaiveBayes = MultinomialNB()
     util.machine_learning_model(NaiveBayes,X_train, y_train, X_test, y_test, "Multinomial Naive Bayes Classifier")
+    
+def SGD_Classifier_model(X_train, y_train, X_test, y_test):
+    SGDClassifier_model = SGDClassifier(alpha=1e-06, penalty='l1', random_state=8)
+    util.machine_learning_model(SGDClassifier_model,X_train, y_train, X_test, y_test, "SGD Classifier")
