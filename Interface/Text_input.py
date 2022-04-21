@@ -7,8 +7,8 @@ from Interface import widget
 from textblob import TextBlob
 from annotated_text import annotated_text
 
-model_list = ["SGD Classifier","Multinomial Naive Bayes Classifier"]
-model_file_list = [r"Machine_Learning_Model/SGD_Classifier.pkl",r"Machine_Learning_Model/MNVBC_model.pkl"]
+model_list = ["SGD Classifier","Logistic Regression", "Multinomial Naive Bayes Classifier"]
+model_file_list = [r"Machine_Learning_Model/SGD_Classifier.pkl", r"Machine_Learning_Model/LR_model.pkl", r"Machine_Learning_Model/MNVBC_model.pkl"]
 def text_input():
     raw_text = st.sidebar.text_area("Enter Text Here")
     btn = st.sidebar.button("Analyse")
