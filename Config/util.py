@@ -515,9 +515,9 @@ def classification(y_test, y_pred, key_value):
         st.metric("Positive", pos_f1)
         st.metric("Negative", neg_f1)
         st.metric("Neutral", neu_f1)
-    positive = list(clf_rep_df.iloc[0])
-    negative = list(clf_rep_df.iloc[1])
-    neutral = list(clf_rep_df.iloc[2])
+    positive = list(clf_rep_df.iloc[2])
+    negative = list(clf_rep_df.iloc[0])
+    neutral = list(clf_rep_df.iloc[1])
     Charts.radar(positive,negative,neutral)
 
 ###########################################
