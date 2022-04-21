@@ -583,7 +583,7 @@ def ML_pie(log_pred, mnvm_pred):
                     },
                     "data": [
                         {"value": log_pred, "name": "SGD Classifier", "itemStyle": {"color": '#fd1d1d'}},
-                        {"value": mnvm_pred, "name": "Logistic Regression", "itemStyle": {"color": '#fcb045'}}
+                        {"value": mnvm_pred, "name": "Logistic Regression", "itemStyle": {"color": '#fcb045'}},
                         {"value": mnvm_pred, "name": "Multinomial Naive Bayes Classifier", "itemStyle": {"color": '#00bf8f'}}
                     ]
                     }
