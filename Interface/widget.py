@@ -42,7 +42,9 @@ def about():
         st.markdown('''
         > 
             - Logistic Regression model
-            - Multinomial Naive Bayes Classifier        
+            - Multinomial Naive Bayes Classifier
+            - Decision Tree Classifier
+            - SGD Classifier (Text Input)
         ''')
         st.subheader("Want to learn more?")
         st.info("**Select an option from the navigation bar on the left** to kick start your analysis!")
