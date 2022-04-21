@@ -411,13 +411,14 @@ def data_transform(final_over_sampling, data_test):
     X_train = vectoriser.transform(X_train)
     X_test = vectoriser.transform(X_test)
 
-    option = st.sidebar.multiselect('Machine Learning Model', ['Logistic Regression Model', 'Multinomial Naive Bayes Classifier'])
+    option = st.sidebar.multiselect('Machine Learning Model', ['Logistic Regression Model', 'Multinomial Naive Bayes Classifier', 'SGD Classifier'])
     if 'Logistic Regression Model' in option:
         ml.logistic_regression_model(X_train, y_train, X_test, y_test)
     if 'Multinomial Naive Bayes Classifier' in option:
         ml.naive_bayes_model(X_train, y_train, X_test, y_test)
-
-
+    if 'SGD Classifier' in option:
+        ml.SGD_Classifier_model(X_train, y_train, X_test, y_test)
+    
 ###########################################
 #            Machine learning             #
 ###########################################
