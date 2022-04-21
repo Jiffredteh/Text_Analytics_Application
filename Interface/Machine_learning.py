@@ -13,4 +13,4 @@ def naive_bayes_model(X_train, y_train, X_test, y_test):
     
 def Decision_tree_model(X_train, y_train, X_test, y_test):
     Decision_tree = DecisionTreeClassifier()
-    util.machine_learning_model(Decision_tree,X_train, y_train, X_test, y_test, "SGD Classifier")
+    util.machine_learning_model(Decision_tree,X_train, y_train, X_test, y_test, "Decision Tree Classifier")
