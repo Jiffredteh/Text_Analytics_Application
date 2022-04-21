@@ -562,7 +562,7 @@ def ML_pie(log_pred, mnvm_pred):
     options = {
             "title": {"text": "Prediction using Machine learning models", "subtext": "1=Negative, 0=Positive", "left": "left"},
             "tooltip": {"trigger": "item"},
-            "legend": {"data": ['Logistic Regression', 'Multinomial Naive Bayes Classifier'], 'bottom': 'bottom'},
+            "legend": {"data": ["SGD Classifier","Logistic Regression", "Multinomial Naive Bayes Classifier"], 'bottom': 'bottom'},
             "series": [
                 {
                     "name": "Prediction",
@@ -582,8 +582,9 @@ def ML_pie(log_pred, mnvm_pred):
                             },
                     },
                     "data": [
-                        {"value": log_pred, "name": "Logistic Regression", "itemStyle": {"color": '#fd1d1d'}},
-                        {"value": mnvm_pred, "name": "Multinomial Naive Bayes Classifier", "itemStyle": {"color": '#fcb045'}}
+                        {"value": log_pred, "name": "SGD Classifier", "itemStyle": {"color": '#fd1d1d'}},
+                        {"value": mnvm_pred, "name": "Logistic Regression", "itemStyle": {"color": '#fcb045'}}
+                        {"value": mnvm_pred, "name": "Multinomial Naive Bayes Classifier", "itemStyle": {"color": '#00bf8f'}}
                     ]
                     }
                 ],
