@@ -61,6 +61,13 @@ def uploader():
         df = da.load_dataset(uploaded_file)
         st.sidebar.write('---')
         text_sel(df)
+    else:
+        st.sidebar.info("Awaiting for CSV file to be uploaded.")
+        if st.sidebar.checkbox('Press to use Example Dataset'):
+            df = da.load_dataset('Dataset/twitter_racism_parsed_dataset.csv')
+            st.sidebar.write('---')
+            text_sel(df)
+            
 
 def text_sel(df):
     # with st.expander("Select a text"):
