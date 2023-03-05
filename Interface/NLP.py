@@ -20,7 +20,6 @@ def text_cleaning(new_df):
     df['Text'] = df['Text'].astype("str").astype("string")
     df['Text'] = df['Text'].str.lower()
     glb.flag = False
-    @st.cache_data
     util.configure_all(df['Text'], df)
     text_cleaning_dashboard(df)
     st.write('---') 
