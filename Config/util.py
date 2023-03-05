@@ -289,7 +289,7 @@ def configure_all(text, pd):
         return pd
     else:
         # Text Cleaning
-        @st.cache(allow_output_mutation=True)
+        # @st.cache_data
         def preprocessing(text):
             text = text.apply(chat_words_conversion)
             text = text.apply(expand_contractions)
