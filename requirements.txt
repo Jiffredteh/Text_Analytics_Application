@@ -3,7 +3,7 @@ streamlit-echarts==0.4.0
 streamlit-aggrid==0.2.3.post2
 st-annotated-text==3.0.0
 sklearn==0.0
-plotly==4.14.3
+plotly==5.13.1
 textblob==0.17.1
 vaderSentiment==3.3.2
 nltk==3.6.5
