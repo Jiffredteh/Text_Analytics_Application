@@ -4,7 +4,7 @@ import pandas as pd
 ###########################################
 #              File Loader                #
 ###########################################
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def load_dataset(uploaded_file):
     try:
         df = pd.read_excel(uploaded_file)
