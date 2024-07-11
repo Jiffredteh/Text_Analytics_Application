@@ -26,7 +26,7 @@ def sent_dashboard(data):
     # st.write('---')
     # sentiment_sent_func(df,option)
     st.write('---')
-    sentiment_words_frequency_func(df,option)
+    # sentiment_words_frequency_func(df,option)
     st.write('---')
     positive_negative_sentiment_freq_func(df)
     st.write('---')
